@@ -33,27 +33,14 @@ class firstWatchFaceView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        // Get the current time and format it correctly
-        var timeFormat = "$1$:$2$";
+        // Get the current time 
         var clockTime = System.getClockTime();
-        var hours = clockTime.hour;
-        if (!System.getDeviceSettings().is24Hour) {
-            if (hours > 12) {
-                hours = hours - 12;
-            }
-        } else {
-            if (getApp().getProperty("UseMilitaryFormat")) {
-                timeFormat = "$1$$2$";
-                hours = hours.format("%02d");
-            }
-        }
-        var timeString = Lang.format(timeFormat, [hours, clockTime.min.format("%02d")]);
 
         // Update the view
-        var view = View.findDrawableById("TimeLabel") as Text;
-        view.setText(timeString);
-
+        initTimeText(clockTime);
         initGreetingText(clockTime);
+
+        initBatteryText(); 
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
@@ -75,6 +62,8 @@ class firstWatchFaceView extends WatchUi.WatchFace {
         isAwake = false; 
     }
 
+
+    // Greeting functions 
     function initGreetingText(clockTime) as Void { 
         var greeting = View.findDrawableById("Greeting") as Text; 
         greeting.setText(greetingToDisplay(clockTime) + " " + owner + "!");
@@ -92,5 +81,33 @@ class firstWatchFaceView extends WatchUi.WatchFace {
             return "Good Night";  
         }
     }
+
+    // Time functions 
+    function initTimeText(clockTime) as Void { 
+        var timeFormat = "$1$:$2$";
+        var hours = clockTime.hour;
+        if (!System.getDeviceSettings().is24Hour) {
+            if (hours > 12) {
+                hours = hours - 12;
+            }
+        } else {
+            if (getApp().getProperty("UseMilitaryFormat")) {
+                timeFormat = "$1$$2$";
+                hours = hours.format("%02d");
+            }
+        }
+        var timeString = Lang.format(timeFormat, [hours, clockTime.min.format("%02d")]);
+
+        var view = View.findDrawableById("TimeLabel") as Text;
+        view.setText(timeString);
+    }
+
+    // Battery functions 
+    function initBatteryText() as Void {
+        var batteryStatus = System.getSystemStats().battery.format("%02d");
+        var batteryText = View.findDrawableById("BatteryText") as Text; 
+        batteryText.setText(batteryStatus.toString() + "%");
+    }
+
 
 }

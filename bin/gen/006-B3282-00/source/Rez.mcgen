@@ -17,13 +17,15 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_42294617879641175914 = new Background();
+            var rez_cmp_local_custom_drawable_56139350319385229457 = new Background();
 
             var rez_cmp_local_text_Greeting = new WatchUi.Text({:identifier=>"Greeting", :color=>Graphics.COLOR_WHITE, :locX=>100, :locY=>30, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
 
             var rez_cmp_local_text_TimeLabel = new WatchUi.Text({:identifier=>"TimeLabel", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_LARGE)) * 0.5), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
 
-            return [rez_cmp_local_custom_drawable_42294617879641175914, rez_cmp_local_text_Greeting, rez_cmp_local_text_TimeLabel] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_BatteryText = new WatchUi.Text({:identifier=>"BatteryText", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+
+            return [rez_cmp_local_custom_drawable_56139350319385229457, rez_cmp_local_text_Greeting, rez_cmp_local_text_TimeLabel, rez_cmp_local_text_BatteryText] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

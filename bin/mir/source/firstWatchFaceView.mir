@@ -1,51 +1,51 @@
-[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 1; ]
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 1; ]
 import Toybox.Application;
-[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 2; ]
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 2; ]
 import Toybox.Graphics;
-[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 3; ]
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 3; ]
 import Toybox.Lang;
-[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 4; ]
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 4; ]
 import Toybox.System;
-[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 5; ]
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 5; ]
 import Toybox.WatchUi;
-[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 7; ]
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 7; ]
 class firstWatchFaceView extends WatchUi.WatchFace{
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 7; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 7; ]
     <init> {
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 7; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 7; ]
     static
     <init> {
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 9; @position = 8; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 9; @position = 8; ]
     var isAwake = true;
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 10; @position = 8; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 10; @position = 8; ]
     var owner = "Ervin";
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 12; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 12; ]
     static
     enum {
-        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 13; @position = 8; ]
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 13; @position = 8; ]
         Morning,
-        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 14; @position = 8; ]
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 14; @position = 8; ]
         Afternoon,
-        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 15; @position = 8; ]
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 15; @position = 8; ]
         Evening,
-        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 16; @position = 8; ]
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 16; @position = 8; ]
         Night
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 19; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 19; ]
     function initialize() as Void {
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_19_26_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 20 8 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_19_26_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 20 8 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_19_26_stop:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_19_26_stop:
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 24; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 24; ]
     function onLayout(dc as Dc) as Void {
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_24_40_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 25 8 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_24_40_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 25 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -54,156 +54,66 @@ C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_24_40_stop:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_24_40_stop:
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 31; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 31; ]
     function onShow() as Void {
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 35; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 35; ]
     function onUpdate(dc as Dc) as Void {
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 37 8 ]
-        [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_stop" ]
-        %timeFormat.1 = local;
-        %tmp.1 = "$1$:$2$";
-        lputv %timeFormat.1 %tmp.1;
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 38 8 ]
-        [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_stop" ]
-        %clockTime.2 = local;
-        %tmp.2 = getm $.Toybox.System;
-        %tmp.3 = getv function %tmp.2 :getClockTime;
-        %tmp.4 = invoke %tmp.2 %tmp.3();
-        lputv %clockTime.2 %tmp.4;
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 39 8 ]
-        [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_stop" ]
-        %hours.3 = local;
-        %tmp.5 = lgetv %clockTime.2;
-        %tmp.6 = getv %tmp.5 :hour;
-        lputv %hours.3 %tmp.6;
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 40 8 ]
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_40_8_if_stmt:
-        %tmp.7 = getm $.Toybox.System;
-        %tmp.8 = getv function %tmp.7 :getDeviceSettings;
-        %tmp.9 = invoke %tmp.7 %tmp.8();
-        %tmp.10 = getv %tmp.9 :is24Hour;
-        %tmp.11 = not %tmp.10;
-        bf %tmp.11 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_40_8_if_false;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_40_8_if_true:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_40_50_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 41 12 ]
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_41_12_if_stmt:
-        %tmp.13 = lgetv %hours.3;
-        %tmp.14 = 12;
-        %tmp.15 = gt %tmp.13 %tmp.14;
-        bf %tmp.15 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_41_12_if_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_41_12_if_true:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_41_28_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 42 16 ]
-        %tmp.17 = lgetv %hours.3;
-        %tmp.18 = 12;
-        %tmp.19 = sub %tmp.17 %tmp.18;
-        lputv %hours.3 %tmp.19;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_41_28_stop:
-        goto @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_41_12_if_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_41_12_if_end:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_40_50_stop:
-        goto @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_40_8_if_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_40_8_if_false:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_44_15_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 45 12 ]
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_45_12_if_stmt:
-        %tmp.20 = self;
-        %tmp.21 = getv function %tmp.20 :getApp;
-        %tmp.22 = invoke %tmp.20 %tmp.21();
-        %tmp.23 = getv function %tmp.22 :getProperty;
-        %tmp.24 = "UseMilitaryFormat";
-        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
-        bf %tmp.25 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_45_12_if_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_45_12_if_true:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_45_59_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 46 16 ]
-        %tmp.26 = "$1$$2$";
-        lputv %timeFormat.1 %tmp.26;
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 47 16 ]
-        %tmp.27 = lgetv %hours.3;
-        %tmp.28 = getv function %tmp.27 :format;
-        %tmp.29 = "%02d";
-        %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
-        lputv %hours.3 %tmp.30;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_45_59_stop:
-        goto @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_45_12_if_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_45_12_if_end:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_44_15_stop:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_40_8_if_end:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 50 8 ]
-        [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_stop" ]
-        %timeString.4 = local;
-        %tmp.31 = getm $.Toybox.Lang;
-        %tmp.32 = getv function %tmp.31 :format;
-        %tmp.34 = lgetv %timeFormat.1;
-        %tmp.35 = newa 2;
-        %tmp.37 = lgetv %hours.3;
-        %tmp.38 = dup %tmp.35;
-        %tmp.39 = aputv %tmp.38 0 %tmp.37;
-        %tmp.40 = lgetv %clockTime.2;
-        %tmp.41 = getv %tmp.40 :min;
-        %tmp.42 = getv function %tmp.41 :format;
-        %tmp.43 = "%02d";
-        %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
-        %tmp.45 = dup %tmp.39;
-        %tmp.46 = aputv %tmp.45 1 %tmp.44;
-        %tmp.47 = invoke %tmp.31 %tmp.32(%tmp.34, %tmp.46);
-        lputv %timeString.4 %tmp.47;
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 53 8 ]
-        [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_stop" ]
-        %view.5 = local;
-        %tmp.49 = getv ? :View;
-        %tmp.50 = getv function %tmp.49 :findDrawableById;
-        %tmp.51 = "TimeLabel";
-        %tmp.52 = invoke %tmp.49 %tmp.50(%tmp.51);
-        %tmp.53 = as %tmp.52 Text;
-        lputv %view.5 %tmp.53;
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 54 8 ]
-        %tmp.54 = lgetv %view.5;
-        %tmp.55 = getv function %tmp.54 :setText;
-        %tmp.57 = lgetv %timeString.4;
-        invoke %tmp.54 %tmp.55(%tmp.57);
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 56 8 ]
-        %tmp.58 = self;
-        %tmp.59 = getv function %tmp.58 :initGreetingText;
-        %tmp.61 = lgetv %clockTime.2;
-        invoke %tmp.58 %tmp.59(%tmp.61);
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 59 8 ]
-        %tmp.63 = getv ? :View;
-        %tmp.64 = getv function %tmp.63 :onUpdate;
-        %tmp.66 = lgetv %dc;
-        invoke %tmp.63 %tmp.64(%tmp.66);
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_35_40_stop:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_35_40_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 37 8 ]
+        [ "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_35_40_start" "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_35_40_stop" ]
+        %clockTime.1 = local;
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 40 8 ]
+        %tmp.4 = self;
+        %tmp.5 = getv function %tmp.4 :initTimeText;
+        %tmp.7 = lgetv %clockTime.1;
+        invoke %tmp.4 %tmp.5(%tmp.7);
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 41 8 ]
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :initGreetingText;
+        %tmp.11 = lgetv %clockTime.1;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 43 8 ]
+        %tmp.12 = self;
+        %tmp.13 = getv function %tmp.12 :initBatteryText;
+        invoke %tmp.12 %tmp.13();
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 46 8 ]
+        %tmp.15 = getv ? :View;
+        %tmp.16 = getv function %tmp.15 :onUpdate;
+        %tmp.18 = lgetv %dc;
+        invoke %tmp.15 %tmp.16(%tmp.18);
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_35_40_stop:
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 65; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 52; ]
     function onHide() as Void {
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 69; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 56; ]
     function onExitSleep() as Void {
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_69_35_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 70 8 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_56_35_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 57 8 ]
         %tmp.1 = true;
         putv self :isAwake %tmp.1;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_69_35_stop:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_56_35_stop:
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 74; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 61; ]
     function onEnterSleep() as Void {
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_74_36_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 75 8 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_61_36_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 62 8 ]
         %tmp.1 = false;
         putv self :isAwake %tmp.1;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_74_36_stop:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_61_36_stop:
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 78; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 67; ]
     function initGreetingText(clockTime) as Void {
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_78_49_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 79 8 ]
-        [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_78_49_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_78_49_stop" ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_67_49_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 68 8 ]
+        [ "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_67_49_start" "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_67_49_stop" ]
         %greeting.1 = local;
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :findDrawableById;
@@ -211,7 +121,7 @@ C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         %tmp.6 = as %tmp.5 Text;
         lputv %greeting.1 %tmp.6;
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 80 8 ]
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 69 8 ]
         %tmp.7 = lgetv %greeting.1;
         %tmp.8 = getv function %tmp.7 :setText;
         %tmp.9 = self;
@@ -225,103 +135,241 @@ C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_
         %tmp.19 = "!";
         %tmp.20 = add %tmp.18 %tmp.19;
         invoke %tmp.7 %tmp.8(%tmp.20);
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_78_49_stop:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_67_49_stop:
     }
-    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 83; ]
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 72; ]
     function greetingToDisplay(clockTime) {
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_83_42_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 84 8 ]
-        [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_83_42_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_83_42_stop" ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_72_42_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 73 8 ]
+        [ "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_72_42_start" "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_72_42_stop" ]
         %hourOfDay.1 = local;
         %tmp.1 = lgetv %clockTime;
         %tmp.2 = getv %tmp.1 :hour;
         lputv %hourOfDay.1 %tmp.2;
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 85 8 ]
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_8_if_stmt:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_12_begin:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 74 8 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_8_if_stmt:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_12_begin:
         %tmp.4 = lgetv %hourOfDay.1;
         %tmp.5 = 0;
         %tmp.6 = gte %tmp.4 %tmp.5;
         %tmp.7 = dup %tmp.6;
-        bf %tmp.7 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_31_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_31_true:
+        bf %tmp.7 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_31_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_31_true:
         %tmp.9 = lgetv %hourOfDay.1;
         %tmp.10 = 12;
         %tmp.11 = lt %tmp.9 %tmp.10;
         %tmp.12 = and %tmp.6 %tmp.11;
         push %tmp.12;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_31_end:
-        %tmp.13 = phi [%tmp.7 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_12_begin] [%tmp.12 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_31_true] [%tmp.13 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_31_end];
-        bf %tmp.13 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_8_if_false;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_8_if_true:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_48_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 86 12 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_31_end:
+        %tmp.13 = phi [%tmp.7 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_12_begin] [%tmp.12 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_31_true] [%tmp.13 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_31_end];
+        bf %tmp.13 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_8_if_false;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_8_if_true:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_48_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 75 12 ]
         %tmp.14 = "Good Morning";
         ret %tmp.14;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_48_stop:
-        goto @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_8_if_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_8_if_false:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 87 15 ]
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_15_if_stmt:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_19_begin:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_48_stop:
+        goto @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_8_if_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_8_if_false:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 76 15 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_15_if_stmt:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_19_begin:
         %tmp.16 = lgetv %hourOfDay.1;
         %tmp.17 = 12;
         %tmp.18 = gte %tmp.16 %tmp.17;
         %tmp.19 = dup %tmp.18;
-        bf %tmp.19 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_38_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_38_true:
+        bf %tmp.19 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_38_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_38_true:
         %tmp.21 = lgetv %hourOfDay.1;
         %tmp.22 = 18;
         %tmp.23 = lt %tmp.21 %tmp.22;
         %tmp.24 = and %tmp.18 %tmp.23;
         push %tmp.24;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_38_end:
-        %tmp.25 = phi [%tmp.19 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_19_begin] [%tmp.24 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_38_true] [%tmp.25 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_38_end];
-        bf %tmp.25 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_15_if_false;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_15_if_true:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_54_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 88 12 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_38_end:
+        %tmp.25 = phi [%tmp.19 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_19_begin] [%tmp.24 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_38_true] [%tmp.25 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_38_end];
+        bf %tmp.25 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_15_if_false;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_15_if_true:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_54_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 77 12 ]
         %tmp.26 = "Good Afternoon";
         ret %tmp.26;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_54_stop:
-        goto @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_15_if_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_15_if_false:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 89 15 ]
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_15_if_stmt:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_19_begin:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_54_stop:
+        goto @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_15_if_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_15_if_false:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 78 15 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_15_if_stmt:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_19_begin:
         %tmp.28 = lgetv %hourOfDay.1;
         %tmp.29 = 18;
         %tmp.30 = gte %tmp.28 %tmp.29;
         %tmp.31 = dup %tmp.30;
-        bf %tmp.31 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_38_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_38_true:
+        bf %tmp.31 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_38_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_38_true:
         %tmp.33 = lgetv %hourOfDay.1;
         %tmp.34 = 20;
         %tmp.35 = lt %tmp.33 %tmp.34;
         %tmp.36 = and %tmp.30 %tmp.35;
         push %tmp.36;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_38_end:
-        %tmp.37 = phi [%tmp.31 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_19_begin] [%tmp.36 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_38_true] [%tmp.37 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_38_end];
-        bf %tmp.37 @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_15_if_false;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_15_if_true:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_54_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 90 12 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_38_end:
+        %tmp.37 = phi [%tmp.31 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_19_begin] [%tmp.36 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_38_true] [%tmp.37 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_38_end];
+        bf %tmp.37 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_15_if_false;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_15_if_true:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_54_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 79 12 ]
         %tmp.38 = "Good Evening";
         ret %tmp.38;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_54_stop:
-        goto @C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_15_if_end;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_15_if_false:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_91_15_start:
-[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc" 92 12 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_54_stop:
+        goto @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_15_if_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_15_if_false:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_80_15_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 81 12 ]
         %tmp.39 = "Good Night";
         ret %tmp.39;
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_91_15_stop:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_89_15_if_end:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_87_15_if_end:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_85_8_if_end:
-C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_source_firstWatchFaceView_mc_83_42_stop:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_80_15_stop:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_78_15_if_end:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_76_15_if_end:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_74_8_if_end:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_72_42_stop:
+    }
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 86; ]
+    function initTimeText(clockTime) as Void {
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 87 8 ]
+        [ "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_start" "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_stop" ]
+        %timeFormat.1 = local;
+        %tmp.1 = "$1$:$2$";
+        lputv %timeFormat.1 %tmp.1;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 88 8 ]
+        [ "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_start" "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_stop" ]
+        %hours.2 = local;
+        %tmp.2 = lgetv %clockTime;
+        %tmp.3 = getv %tmp.2 :hour;
+        lputv %hours.2 %tmp.3;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 89 8 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_89_8_if_stmt:
+        %tmp.4 = getm $.Toybox.System;
+        %tmp.5 = getv function %tmp.4 :getDeviceSettings;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = getv %tmp.6 :is24Hour;
+        %tmp.8 = not %tmp.7;
+        bf %tmp.8 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_89_8_if_false;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_89_8_if_true:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_89_50_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 90 12 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_90_12_if_stmt:
+        %tmp.10 = lgetv %hours.2;
+        %tmp.11 = 12;
+        %tmp.12 = gt %tmp.10 %tmp.11;
+        bf %tmp.12 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_90_12_if_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_90_12_if_true:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_90_28_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 91 16 ]
+        %tmp.14 = lgetv %hours.2;
+        %tmp.15 = 12;
+        %tmp.16 = sub %tmp.14 %tmp.15;
+        lputv %hours.2 %tmp.16;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_90_28_stop:
+        goto @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_90_12_if_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_90_12_if_end:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_89_50_stop:
+        goto @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_89_8_if_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_89_8_if_false:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_93_15_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 94 12 ]
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_94_12_if_stmt:
+        %tmp.17 = self;
+        %tmp.18 = getv function %tmp.17 :getApp;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = getv function %tmp.19 :getProperty;
+        %tmp.21 = "UseMilitaryFormat";
+        %tmp.22 = invoke %tmp.19 %tmp.20(%tmp.21);
+        bf %tmp.22 @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_94_12_if_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_94_12_if_true:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_94_59_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 95 16 ]
+        %tmp.23 = "$1$$2$";
+        lputv %timeFormat.1 %tmp.23;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 96 16 ]
+        %tmp.24 = lgetv %hours.2;
+        %tmp.25 = getv function %tmp.24 :format;
+        %tmp.26 = "%02d";
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        lputv %hours.2 %tmp.27;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_94_59_stop:
+        goto @C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_94_12_if_end;
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_94_12_if_end:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_93_15_stop:
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_89_8_if_end:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 99 8 ]
+        [ "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_start" "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_stop" ]
+        %timeString.3 = local;
+        %tmp.28 = getm $.Toybox.Lang;
+        %tmp.29 = getv function %tmp.28 :format;
+        %tmp.31 = lgetv %timeFormat.1;
+        %tmp.32 = newa 2;
+        %tmp.34 = lgetv %hours.2;
+        %tmp.35 = dup %tmp.32;
+        %tmp.36 = aputv %tmp.35 0 %tmp.34;
+        %tmp.37 = lgetv %clockTime;
+        %tmp.38 = getv %tmp.37 :min;
+        %tmp.39 = getv function %tmp.38 :format;
+        %tmp.40 = "%02d";
+        %tmp.41 = invoke %tmp.38 %tmp.39(%tmp.40);
+        %tmp.42 = dup %tmp.36;
+        %tmp.43 = aputv %tmp.42 1 %tmp.41;
+        %tmp.44 = invoke %tmp.28 %tmp.29(%tmp.31, %tmp.43);
+        lputv %timeString.3 %tmp.44;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 101 8 ]
+        [ "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_start" "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_stop" ]
+        %view.4 = local;
+        %tmp.46 = getv ? :View;
+        %tmp.47 = getv function %tmp.46 :findDrawableById;
+        %tmp.48 = "TimeLabel";
+        %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
+        %tmp.50 = as %tmp.49 Text;
+        lputv %view.4 %tmp.50;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 102 8 ]
+        %tmp.51 = lgetv %view.4;
+        %tmp.52 = getv function %tmp.51 :setText;
+        %tmp.54 = lgetv %timeString.3;
+        invoke %tmp.51 %tmp.52(%tmp.54);
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_86_45_stop:
+    }
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 106; ]
+    function initBatteryText() as Void {
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_106_39_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 107 8 ]
+        [ "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_106_39_start" "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_106_39_stop" ]
+        %batteryStatus.1 = local;
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :getSystemStats;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv %tmp.3 :battery;
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "%02d";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        lputv %batteryStatus.1 %tmp.7;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 108 8 ]
+        [ "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_106_39_start" "C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_106_39_stop" ]
+        %batteryText.2 = local;
+        %tmp.9 = getv ? :View;
+        %tmp.10 = getv function %tmp.9 :findDrawableById;
+        %tmp.11 = "BatteryText";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        %tmp.13 = as %tmp.12 Text;
+        lputv %batteryText.2 %tmp.13;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc" 109 8 ]
+        %tmp.14 = lgetv %batteryText.2;
+        %tmp.15 = getv function %tmp.14 :setText;
+        %tmp.16 = lgetv %batteryStatus.1;
+        %tmp.17 = getv function %tmp.16 :toString;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        %tmp.19 = "%";
+        %tmp.20 = add %tmp.18 %tmp.19;
+        invoke %tmp.14 %tmp.15(%tmp.20);
+C_Garmin_FirstGarminApp_firstWatchFace_custom_garmin_watchface_source_firstWatchFaceView_mc_106_39_stop:
     }
 }
-[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\source\firstWatchFaceView.mc"; @line = 1; ]
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\custom_garmin_watchface\source\firstWatchFaceView.mc"; @line = 1; ]
 <init> {
 }
