@@ -1,0 +1,180 @@
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 12; ]
+    module Fonts {
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+    }
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 15; ]
+    module JsonData {
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 15; ]
+        <init> {
+        }
+    }
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 18; ]
+    module Layouts {
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 18; ]
+        <init> {
+        }
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 19; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_bin_gen_006_B3282_00_source_Rez_mcgen_19_73_start:
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen" 20 12 ]
+            [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_bin_gen_006_B3282_00_source_Rez_mcgen_19_73_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_bin_gen_006_B3282_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_custom_drawable_42294617879641175914.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_42294617879641175914.1 %tmp.1;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen" 22 12 ]
+            [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_bin_gen_006_B3282_00_source_Rez_mcgen_19_73_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_bin_gen_006_B3282_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Greeting.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "Greeting";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_WHITE;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 100;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 30;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_CENTER;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_SMALL;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_Greeting.2 %tmp.5;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen" 24 12 ]
+            [ "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_bin_gen_006_B3282_00_source_Rez_mcgen_19_73_start" "C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_bin_gen_006_B3282_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_TimeLabel.3 = local;
+            %tmp.45 = getm $.Toybox.WatchUi;
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            %tmp.50 = "TimeLabel";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            %tmp.61 = 208;
+            %tmp.62 = 0.5;
+            %tmp.63 = mul %tmp.61 %tmp.62;
+            %tmp.64 = dup %tmp.58;
+            %tmp.65 = aputv %tmp.64 %tmp.60 %tmp.63;
+            %tmp.67 = const :locY;
+            %tmp.68 = 208;
+            %tmp.69 = lgetv %dc;
+            %tmp.70 = getv function %tmp.69 :getFontHeight;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :FONT_LARGE;
+            %tmp.73 = invoke %tmp.69 %tmp.70(%tmp.72);
+            %tmp.74 = sub %tmp.68 %tmp.73;
+            %tmp.75 = 0.5;
+            %tmp.76 = mul %tmp.74 %tmp.75;
+            %tmp.77 = dup %tmp.65;
+            %tmp.78 = aputv %tmp.77 %tmp.67 %tmp.76;
+            %tmp.80 = const :justification;
+            %tmp.81 = getm $.Toybox.Graphics;
+            %tmp.82 = getv %tmp.81 :TEXT_JUSTIFY_CENTER;
+            %tmp.83 = dup %tmp.78;
+            %tmp.84 = aputv %tmp.83 %tmp.80 %tmp.82;
+            %tmp.86 = const :font;
+            %tmp.87 = getm $.Toybox.Graphics;
+            %tmp.88 = getv %tmp.87 :FONT_LARGE;
+            %tmp.89 = dup %tmp.84;
+            %tmp.90 = aputv %tmp.89 %tmp.86 %tmp.88;
+            %tmp.43 = newc %tmp.46 (%tmp.90);
+            lputv %rez_cmp_local_text_TimeLabel.3 %tmp.43;
+[ "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen" 26 12 ]
+            %tmp.91 = newa Array<WatchUi.Drawable> 3;
+            %tmp.93 = lgetv %rez_cmp_local_custom_drawable_42294617879641175914.1;
+            %tmp.94 = dup %tmp.91;
+            %tmp.95 = aputv %tmp.94 0 %tmp.93;
+            %tmp.97 = lgetv %rez_cmp_local_text_Greeting.2;
+            %tmp.98 = dup %tmp.95;
+            %tmp.99 = aputv %tmp.98 1 %tmp.97;
+            %tmp.101 = lgetv %rez_cmp_local_text_TimeLabel.3;
+            %tmp.102 = dup %tmp.99;
+            %tmp.103 = aputv %tmp.102 2 %tmp.101;
+            ret %tmp.103;
+C_Garmin_FirstGarminApp_firstWatchFace_firstWatchFace_bin_gen_006_B3282_00_source_Rez_mcgen_19_73_stop:
+        }
+    }
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 30; ]
+    module Menus {
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 30; ]
+        <init> {
+        }
+    }
+    [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 33; ]
+    module Strings {
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 33; ]
+        <init> {
+        }
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 34; @position = 27; initialized = true; ]
+        var ColorLightGray as Symbol;
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
+        var ColorBlue as Symbol;
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 36; @position = 27; initialized = true; ]
+        var ColorRed as Symbol;
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
+        var ForegroundColorTitle as Symbol;
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
+        var BackgroundColorTitle as Symbol;
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
+        var ColorDarkGray as Symbol;
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 40; @position = 27; initialized = true; ]
+        var MilitaryFormatTitle as Symbol;
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 41; @position = 27; initialized = true; ]
+        var ColorBlack as Symbol;
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 42; @position = 27; initialized = true; ]
+        var ColorWhite as Symbol;
+        [ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
+        var AppName as Symbol;
+    }
+}
+[ @file = "C:\Garmin\FirstGarminApp\firstWatchFace\firstWatchFace\bin\gen\006-B3282-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}
