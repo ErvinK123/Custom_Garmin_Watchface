@@ -1,6 +1,9 @@
 import Toybox.Application;
+import Toybox.Attention; 
 import Toybox.Graphics;
+import Toybox.Time.Gregorian;
 import Toybox.Lang;
+import Toybox.Sensor;
 import Toybox.System;
 import Toybox.WatchUi;
 
@@ -33,14 +36,20 @@ class firstWatchFaceView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
+        var clockTime = Gregorian.info(Time.now(), Time.FORMAT_LONG);
+        // var sensorData = Sensor.getInfo();
+
         // Get the current time 
-        var clockTime = System.getClockTime();
+        // var clockTime = System.getClockTime();
 
         // Update the view
         initTimeText(clockTime);
-        initGreetingText(clockTime);
-
+        initSecondsText(clockTime, isAwake);
+        initDateText(clockTime);
+        initGreetingText(clockTime, isAwake);
         initBatteryText(); 
+        // initHeartRate(sensorData);
+        
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
@@ -64,12 +73,19 @@ class firstWatchFaceView extends WatchUi.WatchFace {
 
 
     // Greeting functions 
-    function initGreetingText(clockTime) as Void { 
+    function initGreetingText(clockTime, isAwake) as Void {
         var greeting = View.findDrawableById("Greeting") as Text; 
-        greeting.setText(greetingToDisplay(clockTime) + " " + owner + "!");
+        if (!isAwake) { 
+            greeting.setText("");
+            return;
+        }
+        greeting.setText(greetingToDisplay(clockTime, true) + " " + owner + "!");
     }
 
-    function greetingToDisplay(clockTime) { 
+    function greetingToDisplay(clockTime, isAwake) { 
+        if (!isAwake) { 
+            return ""; 
+        }
         var hourOfDay = clockTime.hour;
         if (hourOfDay >= 0  && hourOfDay < 12 ) { 
             return "Good Morning";
@@ -84,8 +100,14 @@ class firstWatchFaceView extends WatchUi.WatchFace {
 
     // Time functions 
     function initTimeText(clockTime) as Void { 
-        var timeFormat = "$1$:$2$";
+        var dayOrNight = "am";
+        var timeFormat = "$1$ :$2$ $3$";
         var hours = clockTime.hour;
+
+        if (hours > 12) { 
+            dayOrNight = "pm";
+        }
+
         if (!System.getDeviceSettings().is24Hour) {
             if (hours > 12) {
                 hours = hours - 12;
@@ -96,10 +118,29 @@ class firstWatchFaceView extends WatchUi.WatchFace {
                 hours = hours.format("%02d");
             }
         }
-        var timeString = Lang.format(timeFormat, [hours, clockTime.min.format("%02d")]);
+        var timeString = Lang.format(timeFormat, [hours, clockTime.min.format("%02d"), dayOrNight]);
+
 
         var view = View.findDrawableById("TimeLabel") as Text;
         view.setText(timeString);
+    }   
+
+    function initSecondsText(clockTime, isAwake) as Void { 
+        var view = View.findDrawableById("secondLabel") as Text;
+        if (!isAwake) { 
+            view.setText("");
+            return;
+        }
+        view.setText(":" + clockTime.sec.format("%02d"));
+    }
+
+    function initDateText(clockTime) as Void { 
+        var view = View.findDrawableById("dateText") as Text; 
+        var dateFormat = "$1$\n$2$ $3$";
+        // System.println(clockTime.day.format("%02u"));
+        // System.println(clockTime.month.format("%02u"));
+        var dateString = Lang.format(dateFormat, [clockTime.day_of_week , clockTime.day.format("%02u"), clockTime.month]);
+        view.setText(dateString);
     }
 
     // Battery functions 
@@ -109,5 +150,13 @@ class firstWatchFaceView extends WatchUi.WatchFace {
         batteryText.setText(batteryStatus.toString() + "%");
     }
 
+    
+
+    // HeartRate function 
+    // function initHeartRate(sensorData) as Void {
+    //     var heartRate = sensorData.heartRate;
+    //     var heartRateText = View.findDrawableById("heartRate") as Text; 
+    //     heartRateText.setText(heartRate.toString()); 
+    // }
 
 }
