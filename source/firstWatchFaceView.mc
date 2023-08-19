@@ -104,7 +104,7 @@ class firstWatchFaceView extends WatchUi.WatchFace {
         var timeFormat = "$1$ :$2$ $3$";
         var hours = clockTime.hour;
 
-        if (hours > 12) { 
+        if (hours >= 12) { 
             dayOrNight = "pm";
         }
 
